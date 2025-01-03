@@ -1,0 +1,185 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 10px 0;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: red;
+}
+
+/* Header Section */
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-text {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+}
+.header-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.header-text span {
+    color: red;
+}
+.header-image {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+.header-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.button-group {
+    margin-top: 20px;
+}
+.button-group .btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+.button-group .btn:hover {
+    background-color: darkred;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.about h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: black;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile-image {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+}
+.profile-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about-details {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    margin: 20px;
+}
+.about-details p {
+    margin-bottom: 10px;
+}
+.about-details .btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.about-details .btn:hover {
+    background-color: darkred;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+.skills h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: black;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.skill {
+    text-align: left;
+}
+.skill span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.progress {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.progress-bar {
+    height: 100%;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+}
